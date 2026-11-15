@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>whale.elasticcow.com </title>
+  <style>
+    :root { color-scheme: dark; --green:#35ff6b; --dim:#9bbda5; --line:#1d9b48; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; padding:24px;
+      background: radial-gradient(ellipse at 50% 0%, #09210f 0, #050b07 55%, #020503 100%);
+      color:#e8f5eb; font:16px/1.5 "SFMono-Regular",Consolas,"Liberation Mono",monospace;
+    }
+    .shell {
+      max-width:1100px; margin:0 auto; padding:clamp(20px,4vw,44px);
+      border:1px solid var(--green); border-radius:16px;
+      box-shadow:0 0 28px #00ff4420,inset 0 0 24px #00ff4408;
+      background:#030906dd;
+    }
+    header { text-align:center; padding:10px 0 30px; }
+    .brand { color:var(--green); font-size:clamp(2.5rem,9vw,6rem); font-weight:900; letter-spacing:.08em; line-height:1; text-shadow:0 0 18px #00ff4440; }
+    .rule { display:flex; align-items:center; gap:18px; color:var(--green); letter-spacing:.42em; margin:18px 0 8px; }
+    .rule:before,.rule:after { content:""; height:2px; background:var(--green); flex:1; }
+    .tagline { color:#b7d7bf; }
+    .welcome { border:1px solid var(--green); border-radius:10px; padding:18px 22px; display:flex; gap:18px; align-items:center; margin:12px 0 34px; }
+    .prompt { color:var(--green); font-size:2.5rem; font-weight:bold; }
+    .welcome strong { display:block; color:var(--green); font-size:1.15rem; }
+    h2 { color:var(--green); font-size:1.25rem; margin:0 0 12px; }
+    .section-head { border-bottom:1px solid var(--green); padding-bottom:10px; margin-bottom:8px; }
+    .file-list { width:100%; border-collapse:collapse; }
+    .file-list th { text-align:left; color:var(--green); font-weight:700; padding:10px 12px; border-bottom:1px solid var(--line); }
+    .file-list td { padding:12px; border-bottom:1px solid #245333; }
+    .file-list tr:last-child td { border-bottom:0; }
+    .filename { color:#fff; }
+    .muted { color:var(--dim); }
+    .download {
+      display:inline-block; color:var(--green); text-decoration:none; font-weight:bold;
+      border:1px solid var(--green); border-radius:8px; padding:7px 13px; white-space:nowrap;
+    }
+    .download:hover,.download:focus { background:#0b3a1b; outline:2px solid #35ff6b55; outline-offset:2px; }
+    .empty { color:var(--dim); padding:18px 12px; }
+    footer { margin-top:36px; padding:16px 4px 0; border-top:1px solid var(--line); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:var(--green); }
+    .status:before { content:""; display:inline-block; width:9px; height:9px; border-radius:50%; background:var(--green); margin-right:9px; box-shadow:0 0 10px var(--green); }
+    @media (max-width:700px) {
+      body { padding:10px; font-size:14px; }
+      .shell { padding:18px 14px; }
+      .file-list thead { display:none; }
+      .file-list,.file-list tbody,.file-list tr,.file-list td { display:block; width:100%; }
+      .file-list tr { border-bottom:1px solid #245333; padding:10px 0; }
+      .file-list td { border:0; padding:4px 8px; }
+      .file-list td:nth-child(2):before { content:"Description: "; color:var(--dim); }
+      .file-list td:nth-child(3):before { content:"Size: "; color:var(--dim); }
+      .file-list td:last-child { padding-top:9px; }
+      .download { width:100%; text-align:center; }
+      .welcome { align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="brand" aria-label="whale">whale</div>
+      <div class="rule">elasticcow</div>
+
+    </header>
+    <img src="./images/image.png " alt="whale" style="width:100%;max-width:400px;display:block;margin:0 auto 24px;">
+
+
+
+    <footer>
+      <span>footer</span>
+    </footer>
+  </main>
+
+
+</body>
+</html>
